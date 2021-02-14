@@ -1,0 +1,36 @@
+<!--
+File: config.xml
+Authors: Damián Castro, Andry Ratsimandresy and Sebastien Donnet (last cleanup & edits)
+Config file controls the behavior of the ocendata+ application.
+It controls how ocendata+ connnects to the database server and how it interprets each input data file
+-->
+<oceandata>
+  <destination>
+    <default>ODBC</default>
+    <odbcparams driver="{MySQL ODBC 5.3 Unicode Driver}" server="localhost" database="oceandata" user="root" password=""></odbcparams>
+    <mysqlConn server="localhost" database="oceandata" user="root" password="">Default</mysqlConn>
+	<batchsize>2500</batchsize>
+	<filedoubleproc>0</filedoubleproc>
+  </destination>
+  <source>
+    <odbcparams>Driver={Microsoft Text Driver (*.txt; *.csv)};Extensions=csv,cdf,txt;HDR=YES;Fmt=Delimited(	)</odbcparams>
+    <oledbparams>Provider=Microsoft.ACE.OLEDB.12.0;Extended Properties='Text;HDR=Yes;FMT=Tabdelimited;';Data Source=</oledbparams>
+  </source>
+  <schemas>
+		<schema name="Default">
+			<InstrumentTypes></InstrumentTypes>
+			<metadata table="metadata">
+			  <field name="Station" type="string" />
+			  <field name="Latitude(DecDeg)" type="number"></field>
+			  <field name="Longitude(DecDeg)" type="number" />
+			  <field name="Instrument" type="string" />
+			</metadata>
+			<fields>
+				<field name="idEvent" idEventFunction="'getEventID" />
+				<field name="Time(ISO8601)" destfunction="str_to_date" destparameterstr="%Y-%m-%dT%H:%i:%s" type="datetime" />
+				<field name="Depth(m)" type="number" />
+			</fields>
+			<afterProcedure></afterProcedure>
+		</schema>
+  </schemas>
+</oceandata>
