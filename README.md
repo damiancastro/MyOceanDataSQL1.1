@@ -11,7 +11,7 @@ The database was developed in the open source relational database system MySQL. 
 The OWA offers several filtering options to extract desired data using the mandatory fields “Instrument” (i.e. “InstrumentType”), “Location” (i.e. “Longitude(DecDeg)” and “Latitude(DecDeg)”), “Time” (i.e. “Time(ISO8601)”) and “Depth” (“Depth(unit)”). The interface also allows the selection of the measurement variable(s) to bring retrieve from the database. By default, variables time and depth are always included. OWA also offers three spatial options to filter data location: 1/ select stations either by clicking them on the map or by entering the station name from the list, 2/ enter a latitude (DecDeg), longitude (DecDeg) and a radius (km) or directly draw a circle on the map or 3/ draw a polygon, circle or square on the map. With the last two options, OWA will retrieve the stations that are inside the circle or polygon. Polygons are processed by the database server using MySQL spatial indexes resulting in efficient and fast execution regardless of how many rows are in the database. Data extracted are provided as a csv file which contains, as a minimum, the mandatory variables: “Station”, “Instrument”, “InstrumentType”, “Longitude(DecDeg)”, “Latitude(DecDeg)”, “Time(ISO8601)” and "Depth(unit)" plus all other variables selected by the user. Figure 4 shows OWA workflow and describes the available filtering options.
 
 
-Dependencies for a local MS Windows install (suggestion/optional)
+Dependencies for a local MS Windows install (suggestion/optional): 
 These are the executables and dependencies to install a local MySQL server and Web server as well as utilities on a MS Windows machine (some of them could be already on machine):
 
 Visual C++ Redist
