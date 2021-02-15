@@ -1,5 +1,5 @@
 # MyOceanDataSQL1.1
-Introductory note: a manual for this application is provided at the root of this repository. We encourage any interested user, particularly those with little previous experience with MySQL and web-server applications to read it before attempting an install.
+Introductory note: a manual for this application is provided at the root of this repository. We encourage any interested user, particularly those with little previous experience with MySQL and web-server applications, to read it before attempting an install.
 
 MyOceandataSQL was developed in 3 components: a GUI “Oceandata Upload Application” (OUA) to upload and consolidate data in a relational database, a MySQL database, and a web-based “Oceandata Web Application” (OWA) which allows users to extract and download data using a map-base tool and different filtering parameters. 
 
