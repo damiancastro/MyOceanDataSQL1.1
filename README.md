@@ -1,10 +1,12 @@
 # MyOceanDataSQL1.1
+Introductory note: a manual for this application is provided at the root of this repository. We encourage any interested user, particularly those with little previous experience with MySQL and web-server applications to read it before attempting an install.
+
 MyOceandataSQL was developed in 3 components: a GUI “Oceandata Upload Application” (OUA) to upload and consolidate data in a relational database, a MySQL database, and a web-based “Oceandata Web Application” (OWA) which allows users to extract and download data using a map-base tool and different filtering parameters. 
 
 -Oceandata Upload Application (OUA). 
 OUA is the primary interface between a user and the relational database to upload data. This GUI was developed in C++. At first, it shows up as a window with tabs. The first tab provides connection with the database while the subsequent tabs (displaying incrementally as the user progress) guide the user in the uploading process.
 
--MySQL database. 
+-MySQL database (oceandata.sql). 
 The database was developed in the open source relational database system MySQL. Database systems are characterized by implementing entity-relationship (ER) models (Chen, 1976) and extended entity-relationship (EER) models (Elmasry and Navathe, 2007). In OUA, the instrument measuring event (i.e. a unique set of station, instrument, latitude and longitude) and each measurement are entities that can be represented in the database as having a relationship such as a measurement “belongs” to a single event. All the measurements are in a “measurement” table and the events in a “metadata” table.
 
 -Oceandata Web Application (OWA). 
