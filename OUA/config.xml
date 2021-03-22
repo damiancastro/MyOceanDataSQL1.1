@@ -1,6 +1,6 @@
 <!--
 File: config.xml
-Authors: Damián Castro, Andry Ratsimandresy and Sebastien Donnet (last cleanup & edits)
+Authors: Damián Castro, Andry Ratsimandresy and Sebastien Donnet
 Config file controls the behavior of the ocendata+ application.
 It controls how ocendata+ connnects to the database server and how it interprets each input data file
 -->
@@ -8,7 +8,6 @@ It controls how ocendata+ connnects to the database server and how it interprets
   <destination>
     <default>ODBC</default>
     <odbcparams driver="{MySQL ODBC 5.3 Unicode Driver}" server="localhost" database="oceandata" user="root" password=""></odbcparams>
-    <mysqlConn server="localhost" database="oceandata" user="root" password="">Default</mysqlConn>
 	<batchsize>2500</batchsize>
 	<filedoubleproc>0</filedoubleproc>
   </destination>
