@@ -1,9 +1,6 @@
-These files include the OUA application (OceanData+.exe) and its dependencies (mysql-connector-odbc-5.3.8-win32.msi and vcredist_2015_x86.exe).
+This folder includes the source code of OUA (Oceandata Upload Application): an application to upload data into oceandata.sql, a database to store ocean/geographically based data accessible via the OWA (Oceandata Web Application).
 
-First install the dependencies and then copy and paste OceanData+.exe with its configuration file config.xml in a folder of your choice (where you have read, write and execute access).
+Details on the files available are provided in the ReadMe.txt
 
-Then you may run OUA by launching the OceanData+ executable.
-
-
-SDonnet, 04-Feb-2021
+SDonnet, 28-Mar-2021
  
